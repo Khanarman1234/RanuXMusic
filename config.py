@@ -7,11 +7,11 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "28645948"))
+API_HASH = getenv("API_HASH", "0d1cca3a9f4f4beb7ae8508f05ec4fcd")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN",", "6673049803:AAHOsVq6u6SB4VbzeR2mGE8JD0MlT5LKQGY")
 
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -22,13 +22,13 @@ DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
 # Get this value from @FallenxBot on Telegram by /id
-OWNER_ID = int(getenv("OWNER_ID", 1356469075))
+OWNER_ID = int(getenv("OWNER_ID", "-6412641300"))
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "ainul ansari")
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY", "b69a94e4-895e-4156-ac93-1dbd1ff977c9")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
@@ -37,10 +37,10 @@ UPSTREAM_REPO = getenv(
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
-)  # Fill this variable if your upstream repository is private
+)  # Fill this variable if your u pstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DevilsHeavenMF")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/log_group1")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/log_group1")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -63,7 +63,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
 STRING1 = getenv("STRING_SESSION", None)
-STRING2 = getenv("STRING_SESSION2", None)
+STRING2 = getenv("STRING_SESSION2", "BQG1GjwAITJo1SulDwX3t9T9ed2wvKsFQm1QlLcr68LDff-yT9M5zE7swOmMP5N7KnX_j0Ufo1Vh4eigUgq8HUD60QFyIF_dkjd6OfSSR3G5eOTe54rxp_o2maW9YDJf8YQnR2uk9iRlpVzMtXQ9DOJUQD3aSw8WOVc2iJhZgA0Hl9vjbwEpDk75gUX7uLBXSg1YW4ht9hTIYHLd4PnIM8j-Jsapbzb9XrXv9TxMdS3pz-74nVpHIBe0jlBu_QkFwnexIY7UvEdTzU3rZGtFTeCtV2VIluC5JdDApGHXuf5gbx-crv3UmqnueBI7I7hTJcKmL3m94QWF0QCifvMJphOVDKMSWgAAAAF-OSQUAA")
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
 STRING5 = getenv("STRING_SESSION5", None)
